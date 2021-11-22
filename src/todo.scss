@@ -1,0 +1,168 @@
+.todo {
+  position: relative;
+  .todoHeader {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .todoTitle {
+      font-size: 25px;
+      color: #0f333f;
+    }
+    .icon {
+      i {
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+  .TodoAdd {
+    width: 780px;
+    height: 670px;
+    margin-top: 10px;
+    color: #239ba8;
+    background-color: #093949;
+    transition: all 1s linear;
+    .TodoAddHeader {
+      width: 100%;
+      height: 80px;
+      background-color: #25253b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s linear;
+      .todoInput {
+        width: 90%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1.5px solid #093949;
+        outline: none;
+        color: #fff;
+        font-size: 18px;
+      }
+      .todoBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 8px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s linear;
+
+        i {
+          color: #000016;
+          font-size: 17px;
+          transition: all 0.3s linear;
+        }
+        &:hover {
+          background-color: transparent;
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .todoBody {
+      .tasks {
+        .TaskHeader {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .taskInfo {
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 0px 20px;
+            .taskName {
+              color: white;
+              font-size: 22px;
+            }
+            input {
+              transform: scale(1.7);
+              margin-left: 20px;
+              cursor: pointer;
+            }
+          }
+          .tasksIcon {
+            margin-right: 20px;
+            i {
+              font-size: 18px;
+              cursor: pointer;
+              &:nth-child(1) {
+                color: green;
+                margin-right: 5px;
+              }
+              &:nth-child(2) {
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+      .tasksInfo {
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .infoRight {
+          bottom: 20px;
+          right: 10px;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .delate {
+            display: flex;
+            button {
+              border: none;
+              margin: 5px;
+              border-radius: 5px;
+              padding: 3px 6px;
+              font-size: 16px;
+              background-color: red;
+              color: #fff;
+              font-weight: 300;
+            }
+            span {
+              color: #fff;
+              margin-top: 10px;
+              font-size: 18px;
+            }
+          }
+          .view {
+            display: flex;
+            margin-top: 5px;
+            margin-left: 19px;
+            button {
+              border: none;
+              margin: 5px;
+              border-radius: 5px;
+              padding: 3px 6px;
+              font-size: 16px;
+              background-color: #3838ec;
+              color: #fff;
+              font-weight: 300;
+            }
+            span {
+              color: #fff;
+              margin-top: 10px;
+            }
+          }
+        }
+        .infoLeft {
+          bottom: 20px;
+          left: 10px;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          span {
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
